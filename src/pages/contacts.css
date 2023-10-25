@@ -1,0 +1,38 @@
+.contacts {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts__header{
+    font-size: 6em;    
+}
+
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-bottom: 30px; */
+}
+
+.contacts__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.contacts__list-item h2 {
+    font-size: 3em;
+    margin: 0 0 20px 0;
+}

@@ -1,0 +1,72 @@
+
+/* .logo {
+    font-family: 'Soyuz Grotesk', sans-serif;
+    color: #f6f7f9;
+    font-size: 1.5em;
+    display: none;
+} */
+
+.nav {
+    font-size: 16px;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* background-color: #333a45; */
+    /* background-color: #000; */
+    position: fixed;
+    margin: 0;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-row {
+    width: 30%;
+}
+
+.nav-list {
+    /* width: 30% ; */
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+}
+
+.nav-list__link {
+	color: #2e2b28;
+    mix-blend-mode:screen;
+	transition: opacity 0.2s ease-in;
+    /* mix-blend-mode:difference; */
+    /* color: #f6f7f9; */
+}
+
+.nav-list__link:hover {
+	opacity: 0.8;
+}
+
+.nav-list__link--active {
+	position: relative;
+    
+}
+
+.nav-list__link--active::before {
+	content: '';
+
+	position: absolute;
+	left: 0;
+	top: 100%;
+
+    border-bottom: solid 2px ;
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: var(--accent);
+}
+

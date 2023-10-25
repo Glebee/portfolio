@@ -1,0 +1,32 @@
+.projects {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects__wrapper {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+}
+
+.projects__title {
+    font-size: 3.5em;
+    padding-bottom: 40px;
+    
+}
+
+.projects__list {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects__title {
+    align-self: flex-start;
+}

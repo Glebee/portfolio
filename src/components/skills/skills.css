@@ -1,0 +1,31 @@
+.skills {
+    height: 20vh;
+    background: #2e2b28;
+    position: sticky;
+    z-index: -5;
+    bottom: 0;
+    color: #d1d4d7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills__wrapper {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill__list-item-img {
+    width: 5rem;
+}
