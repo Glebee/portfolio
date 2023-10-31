@@ -41,6 +41,7 @@
 
 .nav-list__link {
 	color: #2e2b28;
+    padding: 0 10px;
     mix-blend-mode:screen;
 	transition: opacity 0.2s ease-in;
     /* mix-blend-mode:difference; */
@@ -70,3 +71,14 @@
 	background-color: var(--accent);
 }
 
+@media (max-width:450px) {
+    .container{
+        justify-content: center;
+        width: 90%;
+        font-size: 1.5em;
+    }
+
+    .nav-row {
+        width:100%
+    }
+}

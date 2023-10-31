@@ -11,16 +11,15 @@
  flex-direction: column;
  align-items: center;
  width: 100%;
+ padding: 4em 5em;
 }
 
-.projects__title {
-    font-size: 3.5em;
-    padding-bottom: 40px;
-    
-}
 
 .projects__list {
-    width: 80%;
+    width: 100%;
+    column-gap: 1em;
+    row-gap: 1em;
+    /* padding: 0 4em; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -29,4 +28,35 @@
 
 .projects__title {
     align-self: flex-start;
+    font-size: 3.5em;
+    padding-bottom: 40px;
+}
+.projects h2, .projects h2 strong {
+    font-family: "gabriella", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.title__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.projects__git {
+    height: 3.5em;
+    filter: invert(1);
+}
+
+
+@media (max-width:450px) {
+    .projects__title {
+        display: none;
+    }
+    .projects__wrapper {
+        padding-top: 8em;
+    }
 }
