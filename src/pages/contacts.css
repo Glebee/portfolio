@@ -33,8 +33,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 1em 2em;
+    /* box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
+    border-radius: 1em; */
+
 }
+
+/* .contacts__list-item:nth-child(1) {
+    background-color:  rgba(244, 126, 185, 0.5);
+}
+.contacts__list-item:nth-child(2) {
+    background-color: rgba(192, 151, 238, 0.5);
+}
+.contacts__list-item:nth-child(3) {
+    background-color: rgba(162, 184, 242, 0.5);
+} */
 
 .contacts__list-item h2 {
     font-size: 3em;

@@ -67,7 +67,7 @@
     height: 75%;
     object-fit: cover;
     transition: blur 500ms, transform 500ms;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 .projects__list-item:hover .projects__list-item-image {

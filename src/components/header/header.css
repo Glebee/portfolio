@@ -105,7 +105,7 @@
     transition: opacity 150ms;
 }
 
-@media (max-width:450px) {
+@media (max-width:650px) {
     .header {
         padding: 0 1em;
         justify-content: space-around;

@@ -1,11 +1,13 @@
 .projectModule {
     position: absolute;
+    top:0;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    overflow: hidden;
     background-color: rgba(46, 43, 40, 0.5);
     z-index: 100;
     /* background-color: aqua; */
@@ -24,10 +26,13 @@
     width: 60%;
     height: 80%;
     background-color: #2e2b28;
+    border-radius: 1em;
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
+    overflow: hidden;
     align-items: center;
-    padding: 1em;
+    padding: 1em 2em;
     overflow: scroll;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
@@ -42,7 +47,70 @@
     /* height: 50%; */
 }
 
+.projectModule__discription {
+    padding: 2em 0;
+}
 
+.projectModule__keyFeatures {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1em;
+    border-radius: 1em;
+    /* box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px; */
+
+}
+
+h3 {
+    align-self: flex-start;
+}
+
+.projectModule__additionalInfo li{
+    list-style:disc;
+    padding: 0.5em 0;
+    margin: 0 1em;
+}
+
+.projectModule__skillList {
+    width: 90%;
+
+    padding: 3em 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    overflow-y: hidden;
+    /* overflow-x: hidden; */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+}
+
+.projectModule__skillList::-webkit-scrollbar {
+    display: none;
+}
+
+.projectModule__skillList > li {
+    
+    margin: 0 1em;
+    padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 1em;
+}
+
+.projectModule__link {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.2em;
+    border-radius: 1em;
+    color: #2e2b28;
+}
+
+.projectModule__link > span {
+    margin: 0 0.5em 0 0.4em;
+}
+.projectModule__link > img {
+    width:2em;
+    filter: invert(1);
+}
 
 
 
@@ -53,3 +121,22 @@
     display: none;
 }
 
+@media (max-width:650px) {
+
+    .projectModule__image {
+        width: 100%;
+    }
+    .projectModule {
+        /* height: 100%; */
+    }
+
+    .projectModule__container {
+        width: 90%;
+        height: 60%;
+    }
+
+    .projectModule__skillList {
+        width: 100%;
+
+    }
+}

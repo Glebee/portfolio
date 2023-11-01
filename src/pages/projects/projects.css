@@ -27,9 +27,9 @@
 }
 
 .projects__title {
-    align-self: flex-start;
+    /* align-self: flex-start; */
     font-size: 3.5em;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
 }
 .projects h2, .projects h2 strong {
     font-family: "gabriella", sans-serif;
@@ -43,7 +43,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2em;
+    padding: 2em 2em;
 }
 
 .projects__git {
@@ -51,12 +51,25 @@
     filter: invert(1);
 }
 
+.projects__git-mobile {
+    display: none;
+}
 
-@media (max-width:450px) {
+
+@media (max-width:650px) {
     .projects__title {
         display: none;
     }
     .projects__wrapper {
-        padding-top: 8em;
+        padding-top: 4em;
+    }
+    .projects__git {
+        display: none;
+    }
+    .projects__git-mobile {
+        display:block;
+        filter: invert(1);
+        width: 3.5em;
+        margin: 2em
     }
 }

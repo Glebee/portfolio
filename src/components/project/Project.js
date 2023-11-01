@@ -1,8 +1,8 @@
 import "./project.css"
 
-const Project = ({ turnOnModule, name, skills, discription, github, image, bigImage }) => {
+const Project = ({ turnOnModule, name, skills, discription, additionalInfo, github, image, bigImage }) => {
     return (
-        <li className="projects__list-item" onClick={() => turnOnModule(name, skills, discription, github, image)}>
+        <li className="projects__list-item" onClick={() => turnOnModule(name, skills, discription, additionalInfo, github, image)}>
             <img className="projects__list-item-image" src={image} />
             <div className="project__list-item-content">
                 <h2 className="projects__list-item-title">{name}</h2>

@@ -28,15 +28,20 @@
 }
 
 .nav-row {
-    width: 30%;
+    /* width: 30%; */
 }
 
 .nav-list {
     /* width: 30% ; */
     display: flex;
     flex-direction: row;
+    align-items: center;
     /* flex-wrap: wrap; */
     justify-content: space-around;
+}
+
+.nav-list__item {
+    padding: 0 1em;
 }
 
 .nav-list__link {
@@ -71,14 +76,18 @@
 	background-color: var(--accent);
 }
 
-@media (max-width:450px) {
+@media (max-width:650px) {
     .container{
         justify-content: center;
-        width: 90%;
+        width: 100%;
         font-size: 1.5em;
     }
 
     .nav-row {
-        width:100%
+        width:100%;
+    }
+
+    .nav-list__item {
+        padding: 0;
     }
 }
