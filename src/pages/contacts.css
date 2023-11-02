@@ -7,6 +7,10 @@
 }
 
 .contacts__header{
+    background-color: #2e2b28;
+    color: white;
+    mix-blend-mode: multiply;
+    padding: 0 0.1em;
     font-family: "gabriella", sans-serif;
     font-style: normal;
     font-weight: 900;
