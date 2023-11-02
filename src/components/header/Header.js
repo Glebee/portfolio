@@ -11,7 +11,7 @@ const Header =()=>{
                 <div className="header__text">
                     <p>Crafting Digital Experiences</p>
                 </div>
-                <a href="#"  className="header__link">download CV</a>
+                <a href="../../../public/soldatov_frontend.pdf" download className="header__link">download CV</a>
                 <img src={me} className="header__img" loading="lazy"/>
             </div>
             
