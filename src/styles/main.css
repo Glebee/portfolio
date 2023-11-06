@@ -1,5 +1,7 @@
 html {
     overscroll-behavior: none;
+    scroll-snap-type: y mandatory;
+    
 }
 
 body {
@@ -15,6 +17,8 @@ body {
     -moz-animation: gradient 30s ease infinite;
     animation: gradient 30s ease infinite;
     overscroll-behavior: none;
+
+    
 }
 
 @keyframes gradient {

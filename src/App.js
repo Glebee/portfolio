@@ -14,17 +14,9 @@ import Home from "./pages/Home";
 function App() {
   return (
     <div className="App">
-      <Router>
-        {/* <ScrollToTop /> */}
-        <Navbar />
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contacts" element={<Contacts />} />
-        </Routes>
-        {/* <Footer /> */}
-    </Router>
+      <Home />
+      <Projects />
+      <Contacts />
     </div>
   );
 }

@@ -8,6 +8,7 @@
     min-height: 100vh;
     padding: 0 4em;
     top: 0;
+    scroll-snap-align: start;
     /* border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem; */
     overflow: hidden;
