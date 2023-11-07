@@ -38,11 +38,12 @@ const Projects = () => {
     return (
         <section className="projects">
             <ProjectModule isProjectModuleActiv={activeProjectModule} setActiveProjectModule={setActiveProjectModule} projectContent={projectContent} />
-            <div className="projects__wrapper">
-                <div className="title__wrapper">
+            <div className="title__wrapper">
                     <h2 className="projects__title"><strong>PROJECTS</strong></h2>
                     <a href="https://github.com/Glebee"><img className="projects__git" src={git} alt="github" /></a>
                 </div>
+            <div className="projects__wrapper">
+                
 
                 <ul className="projects__list">
                     {projects.map(e => {

@@ -18,6 +18,14 @@ const projects = [
         bigImage: "",
     },
     {
+        name: "node.js Library",
+        skills: ["node.js", "Express.js"],
+        discription: "It's a web application for an online library, allowing users to borrow books in their name. The project was created to teach server application development using Node.js.",
+        github: "https://github.com/Glebee/JSLibrary",
+        image: library,
+        bigImage: "",
+    },
+    {
         name: "TodoList",
         skills: ["JS"],
         discription: "A small interactive web application aimed at training and practicing asynchronous operations and promises, DOM manipulation, data manipulation, and network requests to the server.",
@@ -29,14 +37,7 @@ const projects = [
         image: todoList,
         bigImage: "",
     },
-    {
-        name: "node.js Library",
-        skills: ["node.js", "Express.js"],
-        discription: "It's a web application for an online library, allowing users to borrow books in their name. The project was created to teach server application development using Node.js.",
-        github: "https://github.com/Glebee/JSLibrary",
-        image: library,
-        bigImage: "",
-    },
+    
 ]
 
 export { projects };
