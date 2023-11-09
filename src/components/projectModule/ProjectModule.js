@@ -6,7 +6,7 @@ import gitLogo from "../../imgs/icons/github.png"
 
 const ProjectModule = ({ isProjectModuleActiv, setActiveProjectModule, projectContent }) => {
 
-    const modal = document.getElementById("modal");
+    const modal = document.body;
 
     return (
         createPortal(
