@@ -1,6 +1,7 @@
 .projectModule {
     position: sticky;
-    top:0;
+    bottom:var(--scroll);
+    /* bottom:0; */
     width: 100vw;
     height: 100vh;
     display: flex;

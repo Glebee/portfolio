@@ -2,26 +2,28 @@ import "./contacts.css"
 
 const Contacts = () => {
     return(
-        <main className="contacts">
+        <section className="contacts">
             <div className="contacts__container">
-                <h2 className="contacts__header">Contacts</h2>
+                <h2 className="contacts__header">Let's make something <br/> great together!</h2>
+                <a className="tg-link" href="t.me/dagleb"><h2>t.me/dagleb</h2></a>
                 <ul className="contacts__list">
                     <li className="contacts__list-item">
-                        <h2><strong>Location</strong></h2>
-                        <p>Nizhniy-Novgorod, Russia</p>
-                    </li>
-                    <li className="contacts__list-item">
-                        <h2><strong>Telegram</strong></h2>
-                        <a href="tel:+79991382769">+7 (999) 138-27-69</a>
-                    </li>
-                    <li className="contacts__list-item">
-                        <h2><strong>Email</strong></h2>
+                        
+                        <p>© 2023 Soldatov Gleb • Nizhniy-Novgorod, Russia</p>
                         <a href="mailto:soldatov.glieb@gmail.com">soldatov.glieb@gmail.com</a>
+                    </li>
+                
+                    <li className="contacts__list-item">
+                        <ul className="contacts__list-row">
+                            <li><a href="https://github.com/Glebee/">Github</a></li>
+                            <li><a href="https://vk.com/spaceinventor">VK</a></li>
+                            {/* <li><a href="https://instagram.com/yesgleb">instagram</a></li> */}
+                        </ul>
                     </li>
                 </ul>
             </div>
             
-        </main>
+        </section>
     )
 }
 

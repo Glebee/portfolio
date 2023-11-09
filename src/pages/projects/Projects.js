@@ -32,8 +32,9 @@ const Projects = () => {
             github: github,
             image: image,
         })
-        console.log("success")
+        console.log(name)
     }
+
 
     return (
         <section className="projects">
