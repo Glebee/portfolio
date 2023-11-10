@@ -1,6 +1,6 @@
 .contacts {
     height: 100vh;
-    scroll-snap-align: end;
+    /* scroll-snap-align: end; */
 
 }
 

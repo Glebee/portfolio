@@ -1,8 +1,12 @@
+import { motion } from "framer-motion"
+import {forwardRef} from "react"
+
 import "./project.css"
 
-const Project = ({ turnOnModule, name, skills, discription, additionalInfo, github, image, bigImage }) => {
+
+export const Project = forwardRef(({key, turnOnModule, name, skills, discription, additionalInfo, github, image, bigImage },ref) => {
     return (
-        <li className="projects__list-item" onClick={() => turnOnModule(name, skills, discription, additionalInfo, github, image)}>
+        <li ref={ref} className="projects__list-item" onClick={() => turnOnModule(name, skills, discription, additionalInfo, github, image)}>
             
             <div className="project__list-item-content">
                 <h2 className="projects__list-item-title">{name}</h2>
@@ -14,6 +18,7 @@ const Project = ({ turnOnModule, name, skills, discription, additionalInfo, gith
             </div>
         </li>
     )
-}
+})
 
-export default Project;
+export const MProject = motion(Project);
+
