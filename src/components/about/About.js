@@ -14,7 +14,7 @@ const About = () => {
             <div className="about__wrapper">
                
                 <div className="about__content">
-                    <p className="about__content-text">I have recently graduated from university, studied programming, and I am now looking for my first job in IT. I enjoy creating websites, have experience with various graphic editors, and am fairly confident in English. I aim to apply all of this in practice and improve my skills in a team environment. <br /><br /> I am ready to start my journey with an internship since my commitment to learning and growth in this field is important to me, and I am willing to actively contribute to achieving outstanding results.</p>
+                    <p className="about__content-text ">I have recently graduated from university, studied programming, and I am now looking for my first job in IT. I enjoy creating websites, have experience with various graphic editors, and am fairly confident in English. I aim to apply all of this in practice and improve my skills in a team environment. <br /><br /> I am ready to start my journey with an internship since my commitment to learning and growth in this field is important to me, and I am willing to actively contribute to achieving outstanding results.</p>
                     <ul className="about__content-skillList">
                         <ul className="skill__list-row">
                             <li className="skill__list-item"><img src={js} className="skill__list-item-img" /></li>

@@ -61,7 +61,7 @@
 }
 
 .about__content-skillList {
-    width: 40%;
+    width: auto;
     height: 300px;
     display: flex;
     /* flex-direction: column; */

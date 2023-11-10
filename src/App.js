@@ -14,6 +14,9 @@ import Skills from "./components/skills/Skills";
 import About from "./components/about/About";
 
 function App() {
+ 
+
+
   return (
     <div className="App">
       <Home />
