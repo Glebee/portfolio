@@ -1,7 +1,9 @@
-import { motion } from "framer-motion"
+import { motion, useAnimation } from "framer-motion"
 
 import "./header.css"
 import me from "../../imgs/meSmall.png"
+import { useEffect } from "react"
+
 
 const opacityAnimation = {
     hidden: {
@@ -16,12 +18,22 @@ const opacityAnimation = {
     }
 }
 
+
 const Header = () => {
+    useEffect(() => {
+        const handleScroll = () => {
+          const header = document.querySelector(".header");
+          if (header) {
+            const scrollTop =
+              window.scrollY || document.documentElement.scrollTop;
+            header.style.opacity = 1 - scrollTop / 500;
+          }
+        };
+        window.addEventListener("scroll", handleScroll);
+    },[])
+
     return (
-        <motion.header
-            initial="hidden"
-            whileInView="visiable"
-            variants={opacityAnimation}
+        <header
             className="header">
             <div className="header__wrapper">
                 <h1 className="header__title">
@@ -49,7 +61,7 @@ const Header = () => {
                 </motion.div> */}
             </div>
 
-        </motion.header>
+        </header>
     )
 }
 

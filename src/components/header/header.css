@@ -1,5 +1,5 @@
 .header {
-    /* position: sticky; */
+    position: sticky;
     display: flex;
     float:left;
     flex-direction: column;
@@ -24,18 +24,12 @@
     -webkit-animation: gradient 30s ease infinite;
     -moz-animation: gradient 30s ease infinite;
     animation: gradient 30s ease infinite; */
+
+
     z-index: -100;
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
 
-    100% {
-        background-position: 100% 50%;
-    }
-}
 
 .header__wrapper {
     padding: 4em 0;
