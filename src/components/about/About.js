@@ -63,6 +63,7 @@ const About = () => {
                                     initial="hiddenJs"
                                     whileInView="visiableJs"
                                     variants={skillsAnimation}
+                                    loading="lazy"
                                     src={js} className="skill__list-item-img" />
                             </li>
                         </ul>
@@ -71,18 +72,18 @@ const About = () => {
                             whileInView="visiable"
                             variants={skillsAnimation}
                             className="skill__list-row">
-                            <li className="skill__list-item"><img src={atom} className="skill__list-item-img" /></li>
-                            <li className="skill__list-item"><img src={files} className="skill__list-item-img" /></li>
-                            <li className="skill__list-item"><img src={css} className="skill__list-item-img" /></li>
+                            <li className="skill__list-item"><img src={atom} loading="lazy" className="skill__list-item-img" /></li>
+                            <li className="skill__list-item"><img src={files} loading="lazy" className="skill__list-item-img" /></li>
+                            <li className="skill__list-item"><img src={css} loading="lazy" className="skill__list-item-img" /></li>
                         </motion.ul>
                         <motion.ul
                             initial="hiddenDown"
                             whileInView="visiable"
                             variants={skillsAnimation}
                             className="skill__list-row">
-                            <li className="skill__list-item"><img src={sass} className="skill__list-item-img" /></li>
-                            <li className="skill__list-item"><img src={github} className="skill__list-item-img" /></li>
-                            <li className="skill__list-item"><img src={figma} className="skill__list-item-img" /></li>
+                            <li className="skill__list-item"><img src={sass} loading="lazy" className="skill__list-item-img" /></li>
+                            <li className="skill__list-item"><img src={github} loading="lazy" className="skill__list-item-img" /></li>
+                            <li className="skill__list-item"><img src={figma} loading="lazy" className="skill__list-item-img" /></li>
                         </motion.ul>
                     </ul>
                 </div>

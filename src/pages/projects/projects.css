@@ -1,9 +1,11 @@
 .projects {
+    margin-top: 4em;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     /* scroll-snap-align: start; */
 }
 
@@ -77,7 +79,11 @@
 
 @media (max-width:650px) {
     .projects__title {
-        display: none;
+        /* display: none; */
+    }
+
+    .title__wrapper {
+        justify-content: center;
     }
 
     .projects__wrapper {
@@ -94,6 +100,10 @@
         width: 3.5em;
         margin: 2em
     }
+
+    .projects__list {
+        padding: 0 1em;
+    }
 }
 
 
@@ -101,5 +111,7 @@
     .projects__list {
         grid-row-gap: calc(4em * 2.5);
     }
+
+    
 }
 
