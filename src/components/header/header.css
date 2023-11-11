@@ -110,6 +110,7 @@
     .header {
         padding: 0 1em;
         justify-content: space-around;
+        color: black;
     }
 
     .header__wrapper {
@@ -118,6 +119,7 @@
         /* justify-content: space-around; */
         align-items: center;
         height: 100%;
+        justify-content: flex-end;
     }
 
     .header__title {
@@ -137,6 +139,7 @@
     .header__link {
         display: inline-block;
         width: 9em;
+        font-size: 2em;
         text-align: center;
     }
 }

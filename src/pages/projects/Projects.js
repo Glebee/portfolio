@@ -8,12 +8,12 @@ import { useState } from "react";
 
 const revealAnimation = {
     hiddenLeft: {
-        opacity: 0,
+        opacity: 1,
         x: -100,
     },
 
     hiddenRight: {
-        opacity: 0,
+        opacity: 1,
         x: 100,
     },
 

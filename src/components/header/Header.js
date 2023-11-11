@@ -5,32 +5,23 @@ import me from "../../imgs/meSmall.png"
 import { useEffect } from "react"
 
 
-const opacityAnimation = {
-    hidden: {
-        opacity: 0,
-    },
-    visiable: {
-        opacity: 1,
-        transition: {
-            duration: 1,
-            delay: 0.5,
-        }
-    }
-}
 
 
 const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
           const header = document.querySelector(".header");
-          if (header) {
-            const scrollTop =
-              window.scrollY || document.documentElement.scrollTop;
-            header.style.opacity = 1 - scrollTop / 500;
+          if (header && header.style.opacity !== "0") {
+            header.style.opacity = 1 - window.scrollY / 500;
           }
         };
+    
         window.addEventListener("scroll", handleScroll);
-    },[])
+    
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, []);
 
     return (
         <header
@@ -40,18 +31,10 @@ const Header = () => {
                     <strong>Hello, I'm <em>Gleb</em>,</strong>
                     <br />a Frontend Developer
                 </h1>
-                <motion.div
-                    initial="hidden"
-                    whileInView="visiable"
-                    variants={opacityAnimation}
-                    className="header__text">
+                <div className="header__text">
                     <p>Crafting Digital Experiences</p>
-                </motion.div>
-                <motion.a
-                    initial="hidden"
-                    whileInView="visiable"
-                    variants={opacityAnimation}
-                    href="../../../public/soldatov_frontend.pdf" download className="header__link">download CV</motion.a>
+                </div>
+                <a href="https://sun1-14.userapi.com/impg/Ivs-gO76Fayt36euJRQm3_UwNOhzsMtYOTfyJA/PNrk3vjM_sk.jpg?size=529x604&quality=96&sign=fe0fd6da4c77bd98778ccad30fb08564&type=album" target="_blank" className="header__link">download CV</a>
                 {/* <motion.div
                     initial="hidden"
                     whileInView="visiable"

@@ -57,6 +57,7 @@
 
 .about__content-text {
     width: 30%;
+    font-weight: 500;
     font-size: 1.2em;
     line-height: 1.2em;
 }

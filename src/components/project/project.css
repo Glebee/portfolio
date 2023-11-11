@@ -27,20 +27,20 @@
 .projects__list-item:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: 16;
-
-    background-color: rgba(192, 151, 238);
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+    background-color: #9D8CB8;
 }
 .projects__list-item:nth-child(2) {
     grid-column-start: 17;
     grid-column-end: 26;
 
-    background-color: rgba(146, 231, 255);
+    background-color: #DAF0EE;
 }
 .projects__list-item:nth-child(3) {
     grid-column-start: 11;
     grid-column-end: 26;
 
-    background-color: rgba(244, 126, 185);
+    background-color: #B4C6DD;
 }
 
 @media (max-width: 992px) {
@@ -91,6 +91,7 @@
     transform: translateY(-2%);
     box-shadow: 0px 50px 100px -20px rgba(0, 0, 0, .15);
     filter: saturate(1.7);
+
 }
 
 
