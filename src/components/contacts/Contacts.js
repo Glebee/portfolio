@@ -1,6 +1,6 @@
 import "./contacts.css"
 import { motion } from "framer-motion"
-import arrow from "../imgs/icons/arrow.gif"
+
 
 const revealAnimation = {
     hidden: {
@@ -36,7 +36,7 @@ const revealAnimation = {
 
 const Contacts = () => {
     return (
-        <section className="contacts">
+        <footer className="contacts">
             <div className="contacts__container">
                 <motion.h2
                     initial="hiddenLeft"
@@ -67,13 +67,12 @@ const Contacts = () => {
                         <ul className="contacts__list-row">
                             <li><a href="https://github.com/Glebee/">Github</a></li>
                             <li><a href="https://vk.com/spaceinventor">VK</a></li>
-                            {/* <li><a href="https://instagram.com/yesgleb">instagram</a></li> */}
                         </ul>
                     </li>
                 </ul>
             </div>
 
-        </section>
+        </footer>
     )
 }
 

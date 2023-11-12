@@ -1,9 +1,9 @@
 import "./projects.css"
 import git from "../../imgs/icons/github.png"
 
-import Project, { MProject } from "../../components/project/Project";
+import Project, { MProject } from "../project/Project";
 import { projects } from "../../helpers/projectsList"
-import ProjectModule from "../../components/projectModule/ProjectModule";
+import ProjectModule from "../projectModule/ProjectModule";
 import { useState } from "react";
 
 const revealAnimation = {
@@ -84,7 +84,7 @@ const Projects = () => {
                         )
                     })}
                 </ul>
-                <a href="https://github.com/Glebee"><img className="projects__git-mobile" src={git} alt="github" /></a>
+                {/* <a href="https://github.com/Glebee"><img className="projects__git-mobile" src={git} alt="github" /></a> */}
             </div>
         </section>
     )

@@ -42,19 +42,6 @@
 
     background-color: #B4C6DD;
 }
-
-@media (max-width: 992px) {
-    .projects__list-item{
-        grid-column-start: 1 !important; 
-        grid-column-end: 26 !important;
-    }
-
-    .projects__list-item {
-        border-radius: 2em;
-    }
-}
-
-
 .projects__list-item-image {
     position: relative;
     top: 10%;
@@ -64,6 +51,23 @@
     border-radius: 1em;
     transition: transform 1000ms ease-out;
 }
+
+@media (max-width: 992px) {
+    .projects__list-item{
+        grid-column-start: 1 !important; 
+        grid-column-end: 26 !important;
+        max-height: 22em;
+        border-radius: 2em;
+    }
+
+    .projects__list-item-image {
+        max-width: 450px;
+
+    }
+}
+
+
+
 
 /* .projects__list-item-title {
         

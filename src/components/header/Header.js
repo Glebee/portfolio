@@ -8,20 +8,38 @@ import { useEffect } from "react"
 
 
 const Header = () => {
+    function throttle(func, delay) {
+        let lastCallTime = 0;
+
+        return function (...args) {
+            const now = new Date().getTime();
+
+            if (now - lastCallTime >= delay) {
+                func(...args);
+                lastCallTime = now;
+            }
+        };
+    }
+
     useEffect(() => {
         const handleScroll = () => {
-          const header = document.querySelector(".header");
+            
+            const header = document.querySelector(".header");
             if (header) {
-            header.style.opacity = 1 - window.scrollY / 500;
-          }
+                header.style.opacity = 1 - window.scrollY / 500;
+            }
+            // if (window.scrollY === 0) {
+            //     header.style.opacity = 1;
+            //     console.log("nu i hule")
+            // }
         };
-    
-        window.addEventListener("scroll", handleScroll);
-    
+
+        window.addEventListener("scroll", throttle(handleScroll, 50));
+
         return () => {
-          window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("scroll", handleScroll);
         };
-      }, []);
+    }, []);
 
     return (
         <header
