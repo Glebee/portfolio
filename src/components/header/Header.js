@@ -28,8 +28,8 @@ const Header = () => {
             className="header">
             <div className="header__wrapper">
                 <h1 className="header__title">
-                    <strong>Hello, I'm <em>Gleb</em>,</strong>
-                    <br />a Frontend Developer
+                    Hello. I'm <em>Gleb</em>.
+                    <br />A Frontend Developer.
                 </h1>
                 <div className="header__text">
                     <p>Crafting Digital Experiences</p>

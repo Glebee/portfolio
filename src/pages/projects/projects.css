@@ -1,5 +1,5 @@
 .projects {
-    margin-top: 4em;
+    /* margin-top: 4em; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
     /* margin: 0 4em; */
     /* column-gap: 1em;
     row-gap: 1em; */
-    padding: 0 4em 4em 4em;
+    padding: 0 4em 6.5em 4em;
     /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -44,19 +44,14 @@
 .projects__title strong {
     /* background-color: #2e2b28; */
 
-    color: #2e2b28;
+    /* color: #2e2b28; */
     /* mix-blend-mode: multiply; */
     padding: 0 0.1em;
     
 
 }
 
-.projects h2,
-.projects h2 strong {
-    font-family: "gabriella", sans-serif;
-    font-style: normal;
-    font-weight: 900;
-}
+
 
 .title__wrapper {
     width: 100%;
@@ -87,7 +82,7 @@
     }
 
     .projects__wrapper {
-        padding-top: 4em;
+        padding-top: 2em;
         display: flex;
         flex-direction: column;
         align-items: center;

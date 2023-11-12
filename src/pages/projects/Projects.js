@@ -58,7 +58,7 @@ const Projects = () => {
         <section className="projects">
             <ProjectModule isProjectModuleActiv={activeProjectModule} setActiveProjectModule={setActiveProjectModule} projectContent={projectContent} />
             <div className="title__wrapper">
-                <h2 className="projects__title"><strong>PROJECTS</strong></h2>
+                <h1 className="projects__title"><strong>PROJECTS</strong></h1>
                 <a href="https://github.com/Glebee"><img className="projects__git" src={git} alt="github" /></a>
             </div>
             <div className="projects__wrapper">

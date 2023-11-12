@@ -1,5 +1,5 @@
 .about {
-    margin: 4em 0 0 0;
+    /* margin: 4em 0 0 0; */
     min-height: 100vh;
     scroll-snap-align: start;
     display: flex;
@@ -49,7 +49,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: #2b2e28;
+    /* color: #2b2e28; */
+    color: black;
     padding: 2em;
     border-radius: 4em;
     /* background-color: #2b2e28; */
@@ -111,6 +112,7 @@ height: 300px;
 
     .about__content-skillList {
         height: 200px;
+        padding: 2em 0;
     }
     .about__content-skillList > :first-child img {
         height: 200px;
