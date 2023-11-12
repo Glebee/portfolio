@@ -11,7 +11,7 @@ const Header = () => {
     useEffect(() => {
         const handleScroll = () => {
           const header = document.querySelector(".header");
-          if (header && header.style.opacity !== "0") {
+            if (header) {
             header.style.opacity = 1 - window.scrollY / 500;
           }
         };

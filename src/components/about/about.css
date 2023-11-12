@@ -76,6 +76,7 @@
     /* width: 100%; */
    flex-direction: column;
    justify-content: space-between;
+   align-items: center;
    /* gap: 2em; */
 }
 
@@ -106,5 +107,13 @@ height: 300px;
     .about__content-text{
         width: auto;
         padding-bottom: 2em;
+    }
+
+    .about__content-skillList {
+        height: 200px;
+    }
+    .about__content-skillList > :first-child img {
+        height: 200px;
+        width: auto;
     }
 }

@@ -1,7 +1,11 @@
 import "./contacts.css"
 import { motion } from "framer-motion"
+import arrow from "../imgs/icons/arrow.gif"
 
 const revealAnimation = {
+    hidden: {
+        opacity:0,
+    },
     hiddenLeft: {
         opacity: 1,
         x: -100,
@@ -39,11 +43,19 @@ const Contacts = () => {
                     whileInView="visiable"
                     variants={revealAnimation}
                     className="contacts__header">Let's make something <br /> great together!</motion.h2>
-                <motion.a
-                    initial="hiddenRight"
-                    whileInView="visiableDelay"
-                    variants={revealAnimation}
-                    className="tg-link" href="t.me/dagleb"><h2>t.me/dagleb</h2></motion.a>
+                <div className="tg__wrapper">
+                        {/* <motion.img
+                            initial="hidden"
+                            whileInView="visiableDelay"
+                            variants={revealAnimation}
+                            id="arrow" src={arrow} /> */}
+                    <motion.a
+                        initial="hiddenRight"
+                        whileInView="visiableDelay"
+                        variants={revealAnimation}
+                        className="tg-link" href="t.me/dagleb"><h2>t.me/dagleb</h2></motion.a>
+                </div>
+
                 <ul className="contacts__list">
                     <li className="contacts__list-item">
 
