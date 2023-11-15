@@ -1,8 +1,7 @@
-import { motion, useAnimation } from "framer-motion"
+import { useEffect } from "react"
 
 import "./header.css"
-import me from "../../imgs/meSmall.png"
-import { useEffect } from "react"
+
 
 
 
@@ -28,7 +27,7 @@ const Header = () => {
             header.style.opacity = 1 - window.scrollY / 500;
             
         }
-        (header.style.opacity < 0) ? header.style.visibility = "hidden" : header.style.visibility = "visible"
+        // (header.style.opacity < 0) ? header.style.visibility = "hidden" : header.style.visibility = "visible"
     };
   
     useEffect(() => {        
