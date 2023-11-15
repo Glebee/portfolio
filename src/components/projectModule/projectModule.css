@@ -63,7 +63,7 @@
 }
 
 .projectModule__image {
-    width: 60%;
+    width: 100%;
 }
 
 .projectModule__discription {
@@ -90,7 +90,7 @@ h3 {
     width: 90%;
     padding: 3em 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex: 1;
     overflow-y: hidden;
@@ -129,10 +129,4 @@ h3 {
 
 .hidden {
     display: none;
-}
-
-@media (max-width:650px) {
-    .projectModule__image {
-        width: 100%;
-    }
 }
