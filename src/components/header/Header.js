@@ -24,13 +24,14 @@ const Header = () => {
             
         const header = document.querySelector(".header");
         if (header) {
+            
             header.style.opacity = 1 - window.scrollY / 500;
             
         }
         (header.style.opacity < 0) ? header.style.visibility = "hidden" : header.style.visibility = "visible"
     };
   
-    useEffect(() => {
+    useEffect(() => {        
         const debouncedScroll = debounce(handleScroll, 10);
         window.addEventListener("scroll", debouncedScroll);
 
