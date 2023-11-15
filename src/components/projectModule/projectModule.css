@@ -130,3 +130,10 @@ h3 {
 .hidden {
     display: none;
 }
+
+@media (max-width:900px) {
+    .projectModule__container {
+        padding: 1em 1em;
+        width: 80%;
+    }    
+}
