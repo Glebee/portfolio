@@ -27,7 +27,7 @@ const Header = () => {
             header.style.opacity = 1 - window.scrollY / 500;
             
         }
-        // (header.style.opacity < 0) ? header.style.visibility = "hidden" : header.style.visibility = "visible"
+        (header.style.opacity < 0) ? header.style.visibility = "hidden" : header.style.visibility = "visible"
     };
   
     useEffect(() => {        
@@ -50,14 +50,7 @@ const Header = () => {
                 <div className="header__text">
                     <p>Crafting Digital Experiences</p>
                 </div>
-                <a href="https://drive.google.com/file/d/1ndepLortBncQm1sBLQCa5CZPa0AFsMCz/view?usp=sharing" target="_blank" className="header__link">download CV</a>
-                {/* <motion.div
-                    initial="hidden"
-                    whileInView="visiable"
-                    variants={opacityAnimation}
-                >
-                    <img src={me} className="header__img" loading="lazy" />
-                </motion.div> */}
+                <a href="https://drive.google.com/file/d/1ndepLortBncQm1sBLQCa5CZPa0AFsMCz/view?usp=sharing" target="_blank" rel="noreferrer" className="header__link">download CV</a>
             </div>
 
         </header>

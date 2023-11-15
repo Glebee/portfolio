@@ -1,47 +1,39 @@
 .projects__list-item {
-    /* width: 25em;
-    min-width: 25em;
-    height: 300px; */
-
     display: flex;
     flex-direction: column;
-    /* align-items: flex-end; */
-    /* justify-content: space-between; */
-    
+
     max-height: 34em;
-    /* margin: 0 4em; */
-    /* box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px; */
     border-radius: 4em;
     overflow: hidden;
     box-sizing: border-box;
-    padding: 0 0 0 0;
-    
+    padding: 0;
+
     text-align: center;
-    /* transition: transform 1s; */
     position: relative;
     cursor: pointer;
     transition: all 1000ms ease-out;
 }
 
-
 .projects__list-item:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: 16;
-    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
     background-color: #9D8CB8;
 }
+
 .projects__list-item:nth-child(2) {
     grid-column-start: 17;
     grid-column-end: 26;
 
     background-color: #DAF0EE;
 }
+
 .projects__list-item:nth-child(3) {
     grid-column-start: 11;
     grid-column-end: 26;
 
     background-color: #B4C6DD;
 }
+
 .projects__list-item-image {
     position: relative;
     top: 10%;
@@ -53,8 +45,8 @@
 }
 
 @media (max-width: 992px) {
-    .projects__list-item{
-        grid-column-start: 1 !important; 
+    .projects__list-item {
+        grid-column-start: 1 !important;
         grid-column-end: 26 !important;
         max-height: 22em;
         border-radius: 2em;
@@ -66,17 +58,6 @@
     }
 }
 
-
-
-
-/* .projects__list-item-title {
-        
-} */
-
-.project__list-item-content {
-    /* padding: 3em 0 0 3em; */
-}
-
 .projects__list-item-title {
     font-size: 2em;
     text-align: right;
@@ -85,18 +66,10 @@
 
 .projects__list-item:hover .projects__list-item-image {
     transform: translateY(2%);
-    
-    /* filter: blur(2px); */
-    /* width: 100%; */
-    /* height: auto; */
-} 
+}
 
 .projects__list-item:hover {
     transform: translateY(-2%);
     box-shadow: 0px 50px 100px -20px rgba(0, 0, 0, .15);
     filter: saturate(1.7);
-
 }
-
-
-

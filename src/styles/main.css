@@ -36,23 +36,11 @@ body h1 {
   font-weight: 900;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-family: 'Golos Text', 'Roboto', sans-serif;
   font-weight: 500;
 }
-
-
-/* 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    100% {
-        background-position: 100% 50%;
-    }
-} */
-
 
 .App {
   min-height: 100vh;

@@ -1,10 +1,7 @@
 .contacts {
-    /* margin-top: 7em; */
     height: 100vh;
-    /* scroll-snap-align: end; */
     overflow: hidden;
 }
-
 
 .contacts__container {
     padding: 4em 4em 2em 4em;
@@ -19,14 +16,13 @@
 }
 
 .tg__wrapper {
-display: flex;
-justify-content: end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .tg-link {
-    /* align-self: flex-end; */
     color: #2e2b28;
-   align-self: center;
+    align-self: center;
 }
 
 .tg-link h2 {
@@ -63,16 +59,17 @@ justify-content: end;
     height: auto;
     align-self: center;
     margin-right: 10%;
-    /* filter: invert(3); */
 }
 
 @media (max-width:650px) {
     .contacts__container {
         padding: 4em 2em 2em 2em;
     }
+
     .contacts__container h2 {
         font-size: 3.5em;
     }
+
     #arrow {
         width: 40%;
     }

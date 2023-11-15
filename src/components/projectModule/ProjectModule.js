@@ -1,12 +1,28 @@
 import { createPortal } from 'react-dom';
 import "./projectModule.css";
 import gitLogo from "../../imgs/icons/github.png"
+import { useEffect } from 'react';
 
 
 
 const ProjectModule = ({ isProjectModuleActiv, setActiveProjectModule, projectContent }) => {
 
-    const modal = document.body;
+    useEffect(() => {
+        const handleEsc = (event) => {
+            if (event.key === 'Escape') {
+                setActiveProjectModule(false);
+                document.body.style.overflow = 'unset';
+            }
+        };
+
+        document.addEventListener('keydown', handleEsc);
+
+        return () => {
+            document.removeEventListener('keydown', handleEsc);
+        };
+    }, [setActiveProjectModule]);
+
+
 
     return (
         createPortal(
@@ -16,7 +32,7 @@ const ProjectModule = ({ isProjectModuleActiv, setActiveProjectModule, projectCo
                 }}>
                 <div className="projectModule__container" onClick={e => e.stopPropagation()}>
                     <h2 className="projectModule__title">{projectContent.name}</h2>
-                    <img className="projectModule__image" src={projectContent.image} />
+                    <img className="projectModule__image" alt="project" src={projectContent.image} />
                 
 
 
@@ -44,11 +60,11 @@ const ProjectModule = ({ isProjectModuleActiv, setActiveProjectModule, projectCo
                     )}
 
 
-                    <a className="projectModule__link" href={projectContent.github}><span>watch on</span><img src={gitLogo}/></a>
+                    <a className="projectModule__link" href={projectContent.github} target="_blank" rel="noreferrer"><span>watch on</span><img src={gitLogo} alt='github'/></a>
 
                 </div>
             </div>,
-            modal
+            document.body
         )
     )
 }
