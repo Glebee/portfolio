@@ -53,7 +53,7 @@ const Contacts = () => {
                         initial="hiddenRight"
                         whileInView="visiableDelay"
                         variants={revealAnimation}
-                        className="tg-link" href="t.me/dagleb"><h2>t.me/dagleb</h2></motion.a>
+                        className="tg-link" href="https://t.me/dagleb"><h2>t.me/dagleb</h2></motion.a>
                 </div>
 
                 <ul className="contacts__list">

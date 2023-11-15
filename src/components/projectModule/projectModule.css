@@ -12,7 +12,10 @@
     background-color: rgba(46, 43, 40, 0.2);
     z-index: 100;
     /* background-color: aqua; */
+  
 }
+
+
 
 .projectModule::before {
     content: "";
@@ -45,11 +48,23 @@
     /* justify-content: center; */
     overflow: hidden;
     align-items: center;
-    padding: 1em 2em;
+    padding: 1em 4em;
     overflow: scroll;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
+    animation: slideIn 0.5s ease-out;
 }
+
+@keyframes slideIn {
+    from {
+      /* transform: translateY(-50px); */
+      opacity: 0;
+    }
+    to {
+      /* transform: translateY(0); */
+      opacity: 1;
+    }
+  }
 
 .projectModule__container::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
@@ -139,6 +154,8 @@ h3 {
     .projectModule__image {
         width: 100%;
     }
+
+    
     .projectModule {
         /* height: 100%; */
     }
@@ -146,6 +163,7 @@ h3 {
     .projectModule__container {
         width: 90%;
         height: 80%;
+        padding: 1em 1em;
     }
 
     .projectModule__skillList {
