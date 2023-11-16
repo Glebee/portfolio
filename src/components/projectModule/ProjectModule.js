@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 
 
 const ProjectModule = ({ isProjectModuleActiv, setActiveProjectModule, projectContent }) => {
-
+    // Эффект для обработки события нажатия клавиши Esc
     useEffect(() => {
         const handleEsc = (event) => {
             if (event.key === 'Escape') {
@@ -25,6 +25,7 @@ const ProjectModule = ({ isProjectModuleActiv, setActiveProjectModule, projectCo
 
 
     return (
+        // Возвращает портал для отображения вне обычного потока React
         createPortal(
             <div className={isProjectModuleActiv ? "projectModule" : "projectModule hidden"} onClick={() => {
                 setActiveProjectModule(false);

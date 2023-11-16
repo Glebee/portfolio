@@ -6,6 +6,8 @@ import { projects } from "../../helpers/projectsList"
 import ProjectModule from "../projectModule/ProjectModule";
 import { useState } from "react";
 
+
+// Анимации для компонента Projects
 const revealAnimation = {
     hiddenLeft: {
         opacity: 1,
@@ -25,11 +27,9 @@ const revealAnimation = {
 }
 
 const Projects = () => {
+    // Состояния для управления модулем проекта и overflow
     const [activeProjectModule, setActiveProjectModule] = useState(false);
     const [overflowBody, setOverflowBody] = useState(false);
-
-
-
     const [projectContent, setProjectContent] = useState({
         name: "",
         skills: "",
@@ -38,7 +38,8 @@ const Projects = () => {
         github: "",
         image: "",
     })
-
+    
+    // Функция для включения модуля проекта
     const turnOnModule = (name, skills, discription, additionalInfo, github, image) => {
         setActiveProjectModule(true);
         document.body.style.overflow = "hidden";
@@ -50,7 +51,6 @@ const Projects = () => {
             github: github,
             image: image,
         })
-        console.log(name)
     }
 
 
@@ -84,7 +84,6 @@ const Projects = () => {
                         )
                     })}
                 </ul>
-                {/* <a href="https://github.com/Glebee"><img className="projects__git-mobile" src={git} alt="github" /></a> */}
             </div>
         </section>
     )

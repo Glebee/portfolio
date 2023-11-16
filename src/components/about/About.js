@@ -9,6 +9,8 @@ import sass from "../../imgs/icons/sass.png"
 import files from "../../imgs/icons/files.png"
 import figma from "../../imgs/icons/figma.png"
 
+
+// Определение анимации для компонента
 const skillsAnimation = {
     hiddenJs: {
         opacity: 0,

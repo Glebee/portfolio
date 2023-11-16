@@ -2,6 +2,7 @@ import "./contacts.css"
 import { motion } from "framer-motion"
 
 
+// Определение анимации для компонента
 const revealAnimation = {
     hidden: {
         opacity:0,

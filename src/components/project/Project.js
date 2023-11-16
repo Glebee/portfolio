@@ -3,7 +3,7 @@ import {forwardRef} from "react"
 
 import "./project.css"
 
-
+//forwardRef для наложения анимаций
 export const Project = forwardRef(({key, turnOnModule, name, skills, discription, additionalInfo, github, image, bigImage },ref) => {
     return (
         <li ref={ref} className="projects__list-item" onClick={() => turnOnModule(name, skills, discription, additionalInfo, github, image)}>

@@ -7,30 +7,32 @@ import "./header.css"
 
 
 const Header = () => {
+    // Функция для создания задержки между вызовами функции
     function debounce(func, delay) {
         let timeoutId;
-      console.log("hi from deb")
         return function (...args) {
-          clearTimeout(timeoutId);
-      
-          timeoutId = setTimeout(() => {
-            func(...args);
-          }, delay);
-        };
-      }
+            clearTimeout(timeoutId);
 
-      const handleScroll = () => {
-            
+            timeoutId = setTimeout(() => {
+                func(...args);
+            }, delay);
+        };
+    }
+    
+    // Обработчик события прокрутки страницы для регулирования opacity блока
+    const handleScroll = () => {
+
         const header = document.querySelector(".header");
         if (header) {
-            
+
             header.style.opacity = 1 - window.scrollY / 500;
-            
+
         }
         (header.style.opacity < 0) ? header.style.visibility = "hidden" : header.style.visibility = "visible"
     };
-  
-    useEffect(() => {        
+
+    // Эффект, регистрирующий слушатель событий при монтировании компонента
+    useEffect(() => {
         const debouncedScroll = debounce(handleScroll, 10);
         window.addEventListener("scroll", debouncedScroll);
 
@@ -57,4 +59,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;
